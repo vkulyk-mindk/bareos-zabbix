@@ -1,16 +1,18 @@
-# Zabbix monitoring of Bacula's backup jobs and its processes
+This is a fork of [germanodlf/bacula-zabbix](https://github.com/germanodlf/bacula-zabbix) to change it and work with a Bareos Instance, following [this issue](https://github.com/germanodlf/bacula-zabbix/issues/6) in the original repository and my own changes. Feel free to contribute.
 
-This project is mainly composed by a bash script and a Zabbix template. The bash script reads values from Bacula Catalog and sends it to Zabbix Server. While the Zabbix template has items and other configurations that receive this values, start alerts and generate graphs and screens. This material was created using Bacula at 7.0.5 version and Zabbix at 2.4.5 version in a GNU/Linux CentOS 7 operational system.
+# Zabbix monitoring of Bareos's backup jobs and its processes
+
+This project is mainly composed by a bash script and a Zabbix template. The bash script reads values from Bareos Catalog and sends it to Zabbix Server. While the Zabbix template has items and other configurations that receive this values, start alerts and generate graphs and screens. This material was created using Bareos at 16.2.4 version and Zabbix at 3.2.4 version in a GNU/Linux CentOS 7 operational system.
 
 ### Abilities
 
 - Customizable and easy to set up
 - Separate monitoring for each backup job
 - Different job levels have different severities
-- Monitoring of Bacula Director, Storage and File processes
+- Monitoring of Bareos Director, Storage and File processes
 - Generates graphs to follow the data evolution
 - Screens with graphs ready for display
-- Works with MySQL and PostgreSQL used by Bacula Catalog
+- Works with MySQL and PostgreSQL used by Bareos Catalog
 
 ### Features
 
@@ -25,15 +27,15 @@ This project is mainly composed by a bash script and a Zabbix template. The bash
 
 ##### Zabbix template configuration
 
-Link this Zabbix template to each host that has a Bacula's backup job implemented. Each host configured in Zabbix with this template linked needs to have its name equals to the name configured in Bacula's Client resource. Otherwise the data collected by the bash script will not be received by Zabbix server.
+Link this Zabbix template to each host that has a Bareos's backup job implemented. Each host configured in Zabbix with this template linked needs to have its name equals to the name configured in Bareos's Client resource. Otherwise the data collected by the bash script will not be received by Zabbix server.
 
 - **Items**
 
-  This Zabbix template has two types of items, the items to receive data of backup jobs, and the itens to receive data of Bacula's processes. The items that receive data of Bacula's processes are described below:
+  This Zabbix template has two types of items, the items to receive data of backup jobs, and the itens to receive data of Bareos's processes. The items that receive data of Bareos's processes are described below:
   
-  - *Bacula Director is running*: Get the Bacula Director process status. The process name is defined by the variable {$BACULA.DIR}, and has its default value as 'bacula-dir'. This item needs to be disabled in hosts that are Bacula's clients only.
-  - *Bacula Storage is running*: Get the Bacula Storage process status. The process name is defined by the variable {$BACULA.SD}, and has its default value as 'bacula-sd'. This item needs to be disabled in hosts that are Bacula's clients only.
-  - *Bacula File is running*: Get the Bacula File process status. The process name is defined by the variable {$BACULA.FD}, and has its default value as 'bacula-fd'.
+  - *Bareos Director is running*: Get the Bareos Director process status. The process name is defined by the variable {$BAREOS.DIR}, and has its default value as 'bareos-dir'. This item needs to be disabled in hosts that are Bareos's clients only.
+  - *Bareos Storage is running*: Get the Bareos Storage process status. The process name is defined by the variable {$BAREOS.SD}, and has its default value as 'bareos-sd'. This item needs to be disabled in hosts that are Bareos's clients only.
+  - *Bareos File is running*: Get the Bareos File process status. The process name is defined by the variable {$BAREOS.FD}, and has its default value as 'bareos-fd'.
 
   The items that receive data of backup jobs are divided into the three backup's levels: Full, Differential and Incremental. For each level there are six items as described below:
 
@@ -46,11 +48,11 @@ Link this Zabbix template to each host that has a Bacula's backup job implemente
 
 - **Triggers**
 
-  The triggers are configured to identify the host that started the trigger through the variable {HOST.NAME}. In the same way as the items, the triggers has two types too. The triggers that are related to Bacula's processes:
+  The triggers are configured to identify the host that started the trigger through the variable {HOST.NAME}. In the same way as the items, the triggers has two types too. The triggers that are related to Bareos's processes:
 
-  - *Bacula Director is DOWN in {HOST.NAME}*: Starts a disaster severity alert when the Bacula Director process goes down
-  - *Bacula Storage is DOWN in {HOST.NAME}*: Starts a disaster severity alert when the Bacula Storage process goes down
-  - *Bacula File is DOWN in {HOST.NAME}*: Starts a high severity alert when the Bacula File process goes down
+  - *Bareos Director is DOWN in {HOST.NAME}*: Starts a disaster severity alert when the Bareos Director process goes down
+  - *Bareos Storage is DOWN in {HOST.NAME}*: Starts a disaster severity alert when the Bareos Storage process goes down
+  - *Bareos File is DOWN in {HOST.NAME}*: Starts a high severity alert when the Bareos File process goes down
 
   And the triggers that are related to backup jobs:
 
@@ -74,52 +76,52 @@ Link this Zabbix template to each host that has a Bacula's backup job implemente
 
 ### Requirements
 
-- Bacula's implemented infrastructure and knowledge about it
+- Bareos's implemented infrastructure and knowledge about it
 - Zabbix's implemented infrastructure and knowledge about it
 - Knowledge about MySQL or PostgreSQL databases
 - Knowledge about GNU/Linux operational systems
 
 ### Installation
 
-1. Create the configuration file `/etc/bacula/bacula-zabbix.conf` as the sample in this repository, customize it for your infrastructure environment, and set the permissions as below:
+1. Create the configuration file `/etc/bareos/bareos-zabbix.conf` as the sample in this repository, customize it for your infrastructure environment, and set the permissions as below:
   ```
-  chown root:bacula /etc/bacula/bacula-zabbix.conf
-  chmod 640 /etc/bacula/bacula-zabbix.conf
-  ```
-
-2. Create the bash script file `/var/spool/bacula/bacula-zabbix.bash` by copying it from this repository and set the permissions as below:
-  ```
-  chown bacula:bacula /var/spool/bacula/bacula-zabbix.bash
-  chmod 700 /var/spool/bacula/bacula-zabbix.bash
+  chown root:bareos /etc/bareos/bareos-zabbix.conf
+  chmod 640 /etc/bareos/bareos-zabbix.conf
   ```
 
-3. Edit the Bacula Director configuration file `/etc/bacula/bacula-dir.conf` to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
+2. Create the bash script file `/var/spool/bareos/bareos-zabbix.bash` by copying it from this repository and set the permissions as below:
+  ```
+  chown bareos:bareos /var/spool/bareos/bareos-zabbix.bash
+  chmod 700 /var/spool/bareos/bareos-zabbix.bash
+  ```
+
+3. Edit the Bareos Director configuration file `/etc/bareos/bareos-dir.conf` to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
   ```
   Messages {
     ...
-    mailcommand = "/var/spool/bacula/bacula-zabbix.bash %i"
+    mailcommand = "/var/spool/bareos/bareos-zabbix.bash %i"
     mail = 127.0.0.1 = all, !skipped
     ...
   }
   ```
 
-4. Now restart the Bacula Director service. In my case I used this command:
+4. Now restart the Bareos Director service. In my case I used this command:
   ```
-  systemctl restart bacula-dir
+  systemctl restart bareos-dir
   ```
 
 5. Make a copy of the Zabbix template from this repository and import it to your Zabbix server.
 
-6. Edit your hosts that have configured backup jobs to use this template. Don't forget to edit the variables with the Bacula's processes names, and to disable in hosts that are only Bacula's clients the items that check the Bacula Director and Storage processes.
+6. Edit your hosts that have configured backup jobs to use this template. Don't forget to edit the variables with the Bareos's processes names, and to disable in hosts that are only Bareos's clients the items that check the Bareos Director and Storage processes.
 
 ### References
 
-- **Bacula**:
+- **Bareos**:
 
-  - http://www.bacula.org/7.0.x-manuals/en/main
-  - http://www.bacula.com.br/manual/Messages_Resource.html
-  - http://www.bacula-web.org/docs.html
-  - http://resources.infosecinstitute.com/data-backups-bacula-notifications
+  - http://www.bareos.org/7.0.x-manuals/en/main
+  - http://www.bareos.com.br/manual/Messages_Resource.html
+  - http://www.bareos-web.org/docs.html
+  - http://resources.infosecinstitute.com/data-backups-bareos-notifications
 
 - **Zabbix**:
 
@@ -133,13 +135,13 @@ Link this Zabbix template to each host that has a Bacula's backup job implemente
 
   - https://www.zabbix.com/forum/showthread.php?t=8145
   - http://paje.net.br/?p=472
-  - https://github.com/selivan/bacula_zabbix_integration
+  - https://github.com/selivan/bareos_zabbix_integration
 
 ### Feedback
 
 Feel free to send bug reports and feature requests here:
 
-- https://github.com/germanodlf/bacula-zabbix/issues
+- https://github.com/germanodlf/bareos-zabbix/issues
 - germanodlf@gmail.com
 
 If you are using this solution in production, please write me about it. It's very important for me to know that my work is not meaningless.

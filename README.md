@@ -32,7 +32,7 @@ Link this Zabbix template to each host that has a Bareos's backup job implemente
 - **Items**
 
   This Zabbix template has two types of items, the items to receive data of backup jobs, and the itens to receive data of Bareos's processes. The items that receive data of Bareos's processes are described below:
-  
+
   - *Bareos Director is running*: Get the Bareos Director process status. The process name is defined by the variable {$BAREOS.DIR}, and has its default value as 'bareos-dir'. This item needs to be disabled in hosts that are Bareos's clients only.
   - *Bareos Storage is running*: Get the Bareos Storage process status. The process name is defined by the variable {$BAREOS.SD}, and has its default value as 'bareos-sd'. This item needs to be disabled in hosts that are Bareos's clients only.
   - *Bareos File is running*: Get the Bareos File process status. The process name is defined by the variable {$BAREOS.FD}, and has its default value as 'bareos-fd'.
@@ -95,7 +95,7 @@ Link this Zabbix template to each host that has a Bareos's backup job implemente
   chmod 700 /var/spool/bareos/bareos-zabbix.bash
   ```
 
-3. Edit the Bareos Director configuration file `/etc/bareos/bareos-dir.conf` to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
+3. Edit the Bareos Director configuration file `/etc/bareos/bareos-dir.conf` (or the separate files in `/etc/bareos/bareos-dir.d/messages`) to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
   ```
   Messages {
     ...
@@ -118,30 +118,25 @@ Link this Zabbix template to each host that has a Bareos's backup job implemente
 
 - **Bareos**:
 
-  - http://www.bareos.org/7.0.x-manuals/en/main
-  - http://www.bareos.com.br/manual/Messages_Resource.html
-  - http://www.bareos-web.org/docs.html
-  - http://resources.infosecinstitute.com/data-backups-bareos-notifications
+  - http://doc.bareos.org/master/html/bareos-manual-main-reference.html
 
 - **Zabbix**:
 
   - http://novatec.com.br/livros/zabbix
   - http://www.zabbix.org/wiki/InstallOnCentOS_RHEL
-  - https://www.zabbix.com/documentation/2.4/start
-  - http://zabbixoverflow.com/index.php?topic=51.0
-  - https://support.zabbix.com/browse/ZBX-7790
+  - https://www.zabbix.com/documentation/3.2/start
 
 - **Integration**:
 
   - https://www.zabbix.com/forum/showthread.php?t=8145
   - http://paje.net.br/?p=472
   - https://github.com/selivan/bareos_zabbix_integration
+  - https://github.com/germanodlf/bacula-zabbix
 
 ### Feedback
 
 Feel free to send bug reports and feature requests here:
 
-- https://github.com/germanodlf/bareos-zabbix/issues
-- germanodlf@gmail.com
+- https://github.com/appsinet/bareos-zabbix
 
 If you are using this solution in production, please write me about it. It's very important for me to know that my work is not meaningless.

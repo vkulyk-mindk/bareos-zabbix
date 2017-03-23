@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template Bacula</template>
-            <name>Template Bacula</name>
+            <template>Template Bareos</template>
+            <name>Template Bareos</name>
             <description/>
             <groups>
                 <group>
@@ -19,7 +19,7 @@
             </groups>
             <applications>
                 <application>
-                    <name>Bacula</name>
+                    <name>Bareos</name>
                 </application>
             </applications>
             <items>
@@ -29,7 +29,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.bytes</key>
+                    <key>bareos.diff.job.bytes</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -60,7 +60,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -72,7 +72,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.compr</key>
+                    <key>bareos.diff.job.compr</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -103,7 +103,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -115,7 +115,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.files</key>
+                    <key>bareos.diff.job.files</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -146,7 +146,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -158,7 +158,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.status</key>
+                    <key>bareos.diff.job.status</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -189,7 +189,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -201,7 +201,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.speed</key>
+                    <key>bareos.diff.job.speed</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -232,7 +232,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -244,7 +244,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.diff.job.time</key>
+                    <key>bareos.diff.job.time</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -275,7 +275,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -287,7 +287,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.bytes</key>
+                    <key>bareos.full.job.bytes</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -318,7 +318,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -330,7 +330,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.compr</key>
+                    <key>bareos.full.job.compr</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -361,7 +361,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -373,7 +373,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.files</key>
+                    <key>bareos.full.job.files</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -404,7 +404,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -416,7 +416,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.status</key>
+                    <key>bareos.full.job.status</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -447,7 +447,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -459,7 +459,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.speed</key>
+                    <key>bareos.full.job.speed</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -490,7 +490,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -502,7 +502,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.full.job.time</key>
+                    <key>bareos.full.job.time</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -533,7 +533,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -545,7 +545,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.bytes</key>
+                    <key>bareos.incr.job.bytes</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -576,7 +576,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -588,7 +588,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.compr</key>
+                    <key>bareos.incr.job.compr</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -619,7 +619,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -631,7 +631,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.files</key>
+                    <key>bareos.incr.job.files</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -662,7 +662,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -674,7 +674,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.status</key>
+                    <key>bareos.incr.job.status</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -705,7 +705,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -717,7 +717,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.speed</key>
+                    <key>bareos.incr.job.speed</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -748,7 +748,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -760,7 +760,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>bacula.incr.job.time</key>
+                    <key>bareos.incr.job.time</key>
                     <delay>0</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -791,19 +791,19 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Bacula Director is running</name>
+                    <name>Bareos Director is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[{$BACULA.DIR}]</key>
+                    <key>proc.num[{$BAREOS.DIR}]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -834,19 +834,19 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Bacula File is running</name>
+                    <name>Bareos File is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[{$BACULA.FD}]</key>
+                    <key>proc.num[{$BAREOS.FD}]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -877,19 +877,19 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Bacula Storage is running</name>
+                    <name>Bareos Storage is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[{$BACULA.SD}]</key>
+                    <key>proc.num[{$BAREOS.SD}]</key>
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -920,7 +920,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Bacula</name>
+                            <name>Bareos</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -930,16 +930,16 @@
             <discovery_rules/>
             <macros>
                 <macro>
-                    <macro>{$BACULA.DIR}</macro>
-                    <value>bacula-dir</value>
+                    <macro>{$BAREOS.DIR}</macro>
+                    <value>bareos-dir</value>
                 </macro>
                 <macro>
-                    <macro>{$BACULA.FD}</macro>
-                    <value>bacula-fd</value>
+                    <macro>{$BAREOS.FD}</macro>
+                    <value>bareos-fd</value>
                 </macro>
                 <macro>
-                    <macro>{$BACULA.SD}</macro>
-                    <value>bacula-sd</value>
+                    <macro>{$BAREOS.SD}</macro>
+                    <value>bareos-sd</value>
                 </macro>
             </macros>
             <templates/>
@@ -966,7 +966,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Differential - Bytes transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -988,7 +988,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Differential - Files transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1010,7 +1010,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Differential - Elapsed time</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1032,7 +1032,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Differential - Transfer rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1054,7 +1054,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Differential - Compression rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1083,7 +1083,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Full - Bytes transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1105,7 +1105,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Full - Files transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1127,7 +1127,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Full - Elapsed time</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1149,7 +1149,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Full - Transfer rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1171,7 +1171,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Full - Compression rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1200,7 +1200,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Incremental - Bytes transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1222,7 +1222,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Incremental - Files transferred</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1244,7 +1244,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Incremental - Elapsed time</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1266,7 +1266,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Incremental - Transfer rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1288,7 +1288,7 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>Backup Incremental - Compression rate</name>
-                                <host>Template Bacula</host>
+                                <host>Template Bareos</host>
                             </resource>
                             <max_columns>3</max_columns>
                             <application/>
@@ -1300,7 +1300,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template Bacula:bacula.diff.job.status.last()}&gt;1</expression>
+            <expression>{Template Bareos:bareos.diff.job.status.last()}&gt;1</expression>
             <name>Backup Differential FAIL in {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1310,7 +1310,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Bacula:bacula.full.job.status.last()}&gt;1</expression>
+            <expression>{Template Bareos:bareos.full.job.status.last()}&gt;1</expression>
             <name>Backup Full FAIL in {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1320,7 +1320,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Bacula:bacula.incr.job.status.last()}&gt;1</expression>
+            <expression>{Template Bareos:bareos.incr.job.status.last()}&gt;1</expression>
             <name>Backup Incremental FAIL in {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1330,8 +1330,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Bacula:proc.num[{$BACULA.DIR}].last()}=0</expression>
-            <name>Bacula Director is DOWN in {HOST.NAME}</name>
+            <expression>{Template Bareos:proc.num[{$BAREOS.DIR}].last()}=0</expression>
+            <name>Bareos Director is DOWN in {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -1340,8 +1340,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Bacula:proc.num[{$BACULA.FD}].last()}=0</expression>
-            <name>Bacula File is DOWN in {HOST.NAME}</name>
+            <expression>{Template Bareos:proc.num[{$BAREOS.FD}].last()}=0</expression>
+            <name>Bareos File is DOWN in {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -1350,8 +1350,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Bacula:proc.num[{$BACULA.SD}].last()}=0</expression>
-            <name>Bacula Storage is DOWN in {HOST.NAME}</name>
+            <expression>{Template Bareos:proc.num[{$BAREOS.SD}].last()}=0</expression>
+            <name>Bareos Storage is DOWN in {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
@@ -1387,8 +1387,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.bytes</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.bytes</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1399,8 +1399,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1431,8 +1431,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.compr</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.compr</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1443,8 +1443,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1475,8 +1475,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.time</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.time</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1487,8 +1487,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1519,8 +1519,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.files</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.files</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1531,8 +1531,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1563,8 +1563,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.speed</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.speed</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1575,8 +1575,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.diff.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.diff.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1607,8 +1607,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.status</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1619,8 +1619,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.bytes</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.bytes</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1651,8 +1651,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.compr</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.compr</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1663,8 +1663,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1695,8 +1695,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.time</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.time</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1707,8 +1707,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1739,8 +1739,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.files</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.files</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1751,8 +1751,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1783,8 +1783,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.speed</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.speed</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1795,8 +1795,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.full.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.full.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1827,8 +1827,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.bytes</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.bytes</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1839,8 +1839,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1871,8 +1871,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.compr</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.compr</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1883,8 +1883,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1915,8 +1915,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.time</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.time</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1927,8 +1927,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1959,8 +1959,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.files</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.files</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1971,8 +1971,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2003,8 +2003,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.speed</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.speed</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2015,8 +2015,8 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template Bacula</host>
-                        <key>bacula.incr.job.status</key>
+                        <host>Template Bareos</host>
+                        <key>bareos.incr.job.status</key>
                     </item>
                 </graph_item>
             </graph_items>

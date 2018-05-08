@@ -11,7 +11,7 @@
         <template>
             <template>Template Bareos</template>
             <name>Template Bareos</name>
-            <description/>
+            <description>See https://github.com/appsinet/bareos-zabbix</description>
             <groups>
                 <group>
                     <name>Templates</name>

@@ -1,4 +1,5 @@
 #!/bin/bash
+# From: https://github.com/appsinet/bareos-zabbix
 
 # Import configuration file
 source /etc/bareos/bareos-zabbix.conf

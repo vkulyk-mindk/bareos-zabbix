@@ -1,4 +1,4 @@
-This is a fork of [germanodlf/bacula-zabbix](https://github.com/germanodlf/bacula-zabbix) to change it and work with a Bareos Instance, following [this issue](https://github.com/germanodlf/bacula-zabbix/issues/6) in the original repository and my own changes. Feel free to contribute.
+This is a fork of [germanodlf/bacula-zabbix](https://github.com/germanodlf/bacula-zabbix)  and [appsinet/bareos-zabbix](https://github.com/appsinet/bareos-zabbix) .
 
 # Zabbix monitoring of Bareos's backup jobs and its processes
 
@@ -95,7 +95,7 @@ Link this Zabbix template to each host that has a Bareos's backup job implemente
   chmod 700 /var/spool/bareos/bareos-zabbix.bash
   ```
 
-3. Edit the Bareos Director configuration file `/etc/bareos/bareos-dir.conf` (or the separate files in `/etc/bareos/bareos-dir.d/messages`) to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
+3. Edit the Bareos Director configuration file `/etc/bareos/bareos-dir.conf` (or the separate files in `/etc/bareos/bareos-dir.d/messages/Standart.conf`) to start the script at the finish of each job. To do this you need to change the lines described below in the Messages resource that is used by all the configured jobs:
   ```
   Messages {
     ...
@@ -137,6 +137,6 @@ Link this Zabbix template to each host that has a Bareos's backup job implemente
 
 Feel free to send bug reports and feature requests here:
 
-- https://github.com/appsinet/bareos-zabbix
+- https://github.com/vkulyk-mindk/bareos-zabbix
 
 If you are using this solution in production, please write me about it. It's very important for me to know that my work is not meaningless.
